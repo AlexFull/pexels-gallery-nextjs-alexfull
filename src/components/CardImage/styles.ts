@@ -156,7 +156,7 @@ export const Loading = styled.div<CardImageProps>`
         height: 64px;
         margin: 8px;
         border-radius: 50%;
-        border: 3px solid #fff;
+        border: 2px solid #fff;
         border-color: #fff transparent #fff transparent;
         animation: lds-dual-ring 1.2s linear infinite;
     }
