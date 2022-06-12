@@ -29,7 +29,7 @@ const Home: NextPage = () => {
                 <VideoWrapperContent>
                     <Icon file="abstract" width={1200} marginBottom={25} />
                     <Container>
-                        <p>A simple NextJs abstracts photo gallery with Pexels Api.</p>
+                        <p>A simple NextJs photo gallery with Pexels Api.</p>
                         <Link href="/gallery" passHref>
                             <Cta>View gallery</Cta>
                         </Link>
