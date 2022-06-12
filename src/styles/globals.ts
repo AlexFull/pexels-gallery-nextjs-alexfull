@@ -2,6 +2,8 @@ import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
 
+
+
    :root {
      --globalPadding: 18px;
    }
@@ -100,6 +102,7 @@ export const ImagesWrapper = styled.div`
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    color: white;
 `;
 
 export const GalleryContainer = styled.div`

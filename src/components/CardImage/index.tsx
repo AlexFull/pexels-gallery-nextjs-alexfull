@@ -20,6 +20,7 @@ import { useLockedBody } from 'usehooks-ts';
 import ToolTips from 'components/tooltips';
 
 export interface CardImageProps {
+    id?: string;
     photographer?: string;
     photographer_url?: string;
     url?: string;
@@ -31,12 +32,14 @@ export interface CardImageProps {
         original?: string;
         large?: string;
         medium?: string;
+        small?: string;
         landscape?: string;
     };
     pageNumber?: number;
 }
 
 const CardImage: React.FC<CardImageProps> = ({
+    id,
     photographer,
     photographer_url,
     url,
@@ -60,7 +63,7 @@ const CardImage: React.FC<CardImageProps> = ({
     return (
         <CardImageWrapper>
             <ImagePreview onClick={toggleLocked}>
-                <Image layout="responsive" width={1200} height={627} src={src.medium} alt={alt} />
+                <Image layout="responsive" objectFit="cover" width={1600} height={900} src={src.medium} alt={alt} />
             </ImagePreview>
 
             {showModal && (
